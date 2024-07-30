@@ -1,0 +1,65 @@
+div {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#green {
+    background-color: green;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header {
+    background-color: tomato;
+}
+
+.footer {
+    background-color: lightgreen;
+}
+
+.main {
+    text-align: left;
+    background-color: deepskyblue;
+}
+
+.aside1 {
+    background-color: gold;
+}
+
+.aside2{
+    background-color: hotpink;
+}
+
+@media all and (min-width: 600px) {
+    .aside {flex: 1 0 0}
+}
+
+@medoa all and (min-width: 800px) {
+    .main {flex: 3 0px}
+    .aside-1 {order: 1;}
+    .main {order: 2;}
+    .aside-2 {order: 3;}
+    .footer {order: 1;}
+}
+
+body {
+    
+}
