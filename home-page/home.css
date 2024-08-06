@@ -154,3 +154,96 @@ footer {
     color: #fd8428;
     transition: all 0.5s ease 0s;
 }
+
+@media only screen and (max-width: 1440px) {
+    section {
+        max-width: 95%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    header {
+        padding: 20px 0px;
+    }
+    #logo {
+        padding: 0px;
+    }
+    input[type="checkbox"] {
+        position: absolute;
+        top: -9999;
+        lefT: -9999;
+        background: none;
+    }
+    input[type="checkbox"]:focus {
+        background: none;
+    }
+    label {
+        float: right;
+        padding: 8px 0px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    input[type="checkbox"]:checked ~ nav {
+        display: block;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        right: 0px;
+        top: 53px;
+        background-color: #002e5b;
+        padding: 0px;
+        z-index: 100px;
+    }
+    nav ul {
+        width: auto;
+    }
+    nav ul li {
+        float: none;
+        padding: 0px;
+        width: 100%;
+        display: table;
+    }
+    nav ul li a {
+        color: #fff;
+        font-size: 15px;
+        padding: 10px 20px;
+        display: block;
+        border-bottom: 10px solid #fd8428;
+    }
+    nav ul li a i {
+        color: #fd8428;
+        padding-right: 13px;
+    }
+    .content {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    h1 {
+        padding: 25px 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    section {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    h1 {
+        font-size: 20px;
+    }
+    label {
+        padding: 50px 0px;
+    }
+    #logo {
+        font-size: 20px;
+    }
+    nav {
+        top: 47px;
+        
+    }
+}
