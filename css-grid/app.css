@@ -1,0 +1,42 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "nav section aside"
+        "footer footer footer";
+    grid-template-rows: 80px 1fr 50px;
+    grid-template-columns: 15% 1fr 18%;
+    gap: 5px;
+    height: 100vh;
+    margin: 10px;
+}
+
+header {
+    background: #b5f9c3;
+    grid-area: header;
+}
+
+nav {
+    background: #ee45ff;
+    grid-area: nav;
+}
+
+section {
+    background: #6fba23;
+    grid-area: section;
+}
+
+aside {
+    background: #7fe456;
+    grid-area: aside;
+}
+
+footer {
+    background: #b5f9c3;
+    grid-area: footer;
+}
+
+header, nav, section, aside, footer {
+    padding: 5px;
+}
